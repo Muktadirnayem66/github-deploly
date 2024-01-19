@@ -15,7 +15,7 @@ yarn add gh-pages
 
 
 ```js
-"homepage": "https://[github username].github.io/[repo name]",
+"homepage": "https://[github username].github.io/[github repo name]",
 
 ```
 এই অংশের কাজগুলি script অপশনের ভিতরে রাখতে হবে।
@@ -27,6 +27,13 @@ yarn add gh-pages
 
 ```js
 "deploy":"gh-pages -d dist",
+```
+
+এই অংশের কাজগুলি vite.config.js অপশনের ভিতরে রাখতে হবে। সেখানে defineConfig অপশনের ভিতরে নিচের অপশনটি এড করতে হবে।
+
+```js
+base:"/[github repo name]/"
+
 ```
 
 তারপর code push করার পর নিচের কমান্ডগুলি run করাতে হবে।
